@@ -1,0 +1,53 @@
+.chatboxLayout {
+    padding: 2rem 7rem;
+    overflow-y: scroll;
+    flex: 1;
+    
+    display: flex;
+    flex-direction: column;
+
+    .messageBox {
+
+        .message {
+            font-size: 1.5rem;
+            color: #444;
+            margin-right: 5rem;
+            flex: 1;
+        }
+        .date {
+            font-size: 1.05rem;
+            align-self: flex-end;
+            margin-bottom: -3px;
+            position: absolute;
+            right: 1.1rem;
+            bottom: .6rem;
+            display: flex;
+            align-items: center;
+
+            i {
+                margin-left: .6rem;
+            }
+        }
+        i {
+            color: transparent;
+            cursor: pointer;
+            transition: .15s ease-out;
+        }
+
+        &:hover i{
+            color: #adadad;
+        }
+        &:hover p i{
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        padding: 1.5rem 4rem;
+    }
+
+    @media (max-width: 600px) {
+        padding: 1rem;
+    }
+}

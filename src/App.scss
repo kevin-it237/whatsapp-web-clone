@@ -1,0 +1,67 @@
+.App {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .greenBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 12rem;
+    display: block;
+    width: 100%;
+    background-color: #009688;
+    z-index: -1;
+  }
+
+  .wrapper {
+    height: 95vh;
+    overflow: hidden;
+  }
+
+  .appLayout {
+    z-index: 10;
+    width: 72%;
+    height: 100%;
+    background-color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (max-width: 1366px) {
+      width: 90%;
+    }
+    @media (max-width: 600px) {
+      width: 96%;
+    }
+  }
+
+  .chatLayout {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-shadow: 0 6px 5px  #999;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6.5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #bbb; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #aaa; 
+}

@@ -1,0 +1,21 @@
+.layoutBody {
+    display: flex;
+    height: 93.5%;
+    
+    .leftSide {
+        width: 30%;
+        height: 100%;
+    }
+
+    .rightSide {
+        flex: 1;
+        height: 100%;
+        background-color: #dddbd1;
+        background-image: linear-gradient(180deg,rgba(#E5DDD5, .9),rgba(#E5DDD5, .9)), url('../../assets/bg-chat.png');
+        background-position: center;
+        background-repeat: repeat;
+
+        display: flex;
+        flex-direction: column;
+    }
+}

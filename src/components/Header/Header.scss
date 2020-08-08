@@ -1,0 +1,82 @@
+header {
+    display: flex;
+    height: 6.5rem;
+    padding-top: .6rem;
+    padding-bottom: .6rem;
+    background-color: #EDEDED;
+    border-bottom: 1px solid #dadbd5;
+
+    .leftHeader {
+        width: 30%;
+        padding: .2rem 1.5rem;
+        display: flex;
+        align-items: center;
+        border-right: solid 1px #dadbd5;
+
+        .userImage {
+            flex: 1;
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 3.7rem;
+                height: 3.7rem;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+        }
+
+        .iconsList {
+            display: flex;
+            align-items: center;
+            
+            i {
+                padding: 1rem;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .rightHeader {
+        display: flex;
+        padding: .2rem 1.5rem;
+        align-items: center;
+        flex: 1;
+
+        .userInfos {
+            display: flex;
+            align-items: center;
+            flex: 1;
+
+            img {
+                width: 3.7rem;
+                height: 3.7rem;
+                border-radius: 50%;
+                cursor: pointer;
+                margin-right: 1.7rem;
+            }
+
+            .infos {
+                h5 {
+                    font-size: 1.65rem;
+                    color: rgb(71, 71, 71);
+                    font-weight: 400;
+                }
+                p {
+                    font-size: 1.4rem;
+                    color: gray;
+                }
+            }
+        }
+
+        .iconsList {
+            display: flex;
+            align-items: center;
+            
+            i {
+                padding: 1rem;
+                cursor: pointer;
+            }
+        }
+    }
+}

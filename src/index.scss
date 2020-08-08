@@ -1,0 +1,32 @@
+html {
+  font-size: 10px; 
+  overflow: hidden;
+  background-color: #dadbd5;
+
+  @media only screen and (max-width: 1024px) {
+    font-size: 9px;
+  }
+
+  @media only screen and (max-width: 700px) {
+    font-size: 8px;
+  }
+}
+
+body{
+  box-sizing: border-box;
+  font-family: Segoe UI,Helvetica Neue,Helvetica,Lucida Grande,Arial,Ubuntu,Cantarell,Fira Sans,sans-serif;
+}
+
+*,*::after, *::before{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color: rgb(71, 71, 71);
+}
+
+p {
+  color: gray;
+}
